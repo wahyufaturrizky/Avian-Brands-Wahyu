@@ -1,0 +1,22 @@
+
+.sc-picker .dropdown-toggle {
+    margin-top: -5px !important;
+    height: 35px !important;
+    border-top-left-radius:18px !important;
+    border-bottom-left-radius:18px !important
+}
+
+.map-filter div {
+    padding:0px !important
+}
+
+.sc-picker  .dropdown-menu{
+    border-radius:15px !important
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: #0D5A38;
+    outline: 0;
+}

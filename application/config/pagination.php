@@ -1,0 +1,13 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+$config['num_links'] = "9";
+$config['cur_tag_open'] = '<li class="active"><a href="#">';
+$config['cur_tag_close'] = '</a></li>';
+$config['first_tag_open'] = $config['last_tag_open'] = $config['num_tag_open'] = $config['prev_tag_open'] = $config['next_tag_open'] ='<li>';
+$config['first_tag_close'] = $config['last_tag_close'] = $config['num_tag_close'] = $config['prev_tag_close'] = $config['next_tag_close'] ='</li>';
+$config['last_link'] = 'Last';
+$config['first_link'] = 'First';
+$config['next_link'] = '&gt;';
+$config['prev_link'] = '&lt;';
+$config['use_page_numbers'] = TRUE;
+$config['per_page'] = PAGER_PAGE_LIMIT;
+$config['attributes'] = array('class' => 'paging');

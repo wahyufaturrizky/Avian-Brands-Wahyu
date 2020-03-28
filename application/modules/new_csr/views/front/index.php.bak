@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="section section-crumb">
+        <div class="section_content">
+            <div class="breadcrumbs">
+                <a href="/">BERANDA</a>
+                <span>CSR</span>
+            </div>
+            <div class="section-title tabgroup targrouptaba targettaba0 section-title-top" targid="taba0" targroup="taba">CORPORATE SOCIAL RESPONSIBILITY</div>
+            <div class="pictext-centered active disap targrouptaba targettaba0">
+                <p class="pictext-p">
+                    PT. Avia Avian menyadari peran penting masyarakat dalam mendukung kelangsungan perusahaan. Sebagai perusahaan yang bertanggung jawab dan memiliki kepedulian sosial, PT. Avia Avian sangat memperhatikan kebutuhan masyarakat disekitarnya.
+                </p>
+                <p class="pictext-p">
+                    Berbagai kegiatan yang diadakan, antara lain melakukan buka puasa bersama pada bulan Ramadhan, memberikan sumbangan hewan kurban untuk perayaan Idul Adha, bekerjasama dengan PMI cabang Sidoarjo untuk mengadakan donor darah setiap 3 bulan sekali, pemberian beasiswa kepada putra – putri karyawan PT. Avia Avian yang berprestasi, serta pemanfaatan lahan milik PT. Avia Avian oleh warga sekitar yang hasilnya digunakan untuk kesejahteraan warga desa.
+                </p>
+                <p class="pictext-p">
+                    Selain itu, PT. Avia Avian juga peduli pada kondisi masyarakat Indonesia pada umumnya, yaitu dengan ikut berpartisipasi memberikan bantuan pada saat terjadi bencana alam di negeri ini.
+                </p>
+            </div>
+            <div class="about csr">
+                <div class="about-tabconts about-tabconts-spread">
+                    <?php 
+                        if($csr) { 
+                            foreach($csr as $key => $value) {
+                    ?>
+
+                    <div class="about-tabcont targrouptaba targettaba<?= $value['id'] ?>">
+                        <div class="csr-contain">
+                            <?php
+                                if($value['slider']) {
+                            ?>
+                            <div class="exslider">
+                                <?php 
+                                    foreach($value['slider'] as $key2 => $value2) {
+                                        echo '<img src="'.$value2['image_slider'].'">'; 
+                                    }
+                                ?>
+                            </div>
+                            <?php } ?>
+
+                            <div class="pictext-centered">
+                                <div class="csr-title"><?= $value['judul'] ?></div>
+                                <div class="csr-content"><?= $value['content'] ?></div>
+                            </div>
+                            <div class="lead"></div>
+                        </div>
+                    </div>
+
+                    <?php }} ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
